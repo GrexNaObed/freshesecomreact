@@ -1,0 +1,125 @@
+.category {
+    background-color: #FFFFFF;
+    padding: 64px 45px;
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 32px;
+    }
+
+    &__item {
+        &:nth-child(2){
+            width: 419px;
+        }
+        &:nth-child(3){
+            width: 419px;
+        }
+        &-links {
+            text-align: left;
+            padding: 0;
+            margin-bottom: 48px;
+        }
+
+        &-link {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-href {
+            color: $c2A;
+            text-decoration: underline;
+        }
+
+        &-btn {
+            font-family: $popins;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 22px;
+            padding: 12px 0;
+            background-color: $c1F;
+            border: none;
+            border-radius: 12px;
+            color: $c1A;
+            cursor: pointer;
+            position: relative;
+            padding-right: 38px;
+            padding-left: 16px;
+            &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                background: url('../../img/arrowR.svg') ;
+                width: 16px;
+                height: 16px;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-right: 16px;
+            }   
+        }
+        &-info{
+            width: 205px;
+            margin-bottom: 94px;
+        }
+        &-sub{
+            color: $c2A;
+            font-family: $popins;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        &-title{
+            font-family: $popins;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+        }
+        &-inner{
+            padding-top: 48px;
+            padding-left: 32px;
+            background-color: $c2D;
+            border-radius: 12px;
+        }
+        &-btns{
+            margin-bottom: 32px;
+            background-color: transparent;
+            border: 2px solid $c2C;
+            padding: 12px 38px 12px 16px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 22px;
+            font-family: $popins;
+            position: relative;
+            border-radius: 12px;
+            &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                background: url('../../img/arrowRG.svg') ;
+                width: 16px;
+                height: 16px;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-right: 16px;
+            } 
+        }
+    }
+
+    &__title {
+        color: $c1A;
+        font-family: $popins;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 16px;
+    }
+}

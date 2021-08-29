@@ -23,6 +23,13 @@ function Header() {
                 <div className="header__search-btns">
                     <ul className="header__search-select">
                         <li className="header__search-item">All categories</li>
+                        {/* <li className="header__search-item">Bakery</li>
+                        <li className="header__search-item">Fruit and vegetables</li>
+                        <li className="header__search-item">Drinks</li>
+                        <li className="header__search-item">Kitchen</li>
+                        <li className="header__search-item">Special nutrition</li>
+                        <li className="header__search-item">Baby</li>
+                        <li className="header__search-item">Pharmacy</li> */}
                     </ul>
                     <input className='header__search-input' type="search" name="" id="" placeholder='Search Products, categories ...' />
                     <img src="/img/loop.svg" alt="" className="header__search-loop" />

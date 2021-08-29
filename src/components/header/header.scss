@@ -1,4 +1,4 @@
-@import '../../scss/vars.scss';
+// @import '../../scss/vars.scss';
 
 .header {
     background-color: #FFFFFF;
@@ -83,7 +83,7 @@
             display: block;
             position: relative;
             text-align: center;
-
+            
             &::before {
                 content: '';
                 display: block;

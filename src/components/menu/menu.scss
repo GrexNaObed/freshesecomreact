@@ -1,0 +1,31 @@
+.menu{
+    display: flex;
+    align-items: center;
+    &__list{
+        display: flex;
+        padding: 16px 0;
+        padding-left: 45px;
+    }
+    &__item{
+        margin-right: 40px;
+        cursor: pointer;
+        color: $c1A;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        font-family: $popins;
+        padding-right: 18px;
+        position: relative;
+        &::after{
+            content: '';
+            display: block;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            background: url('../../img/arrow.svg');
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
