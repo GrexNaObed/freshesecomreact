@@ -17,6 +17,8 @@ function App() {
         <CategoryMenu/>
         <BestSiling/>
         <BestFromFrames/>
+
+        
         <Headline/>
       </Container>
     </div>

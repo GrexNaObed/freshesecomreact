@@ -1,5 +1,5 @@
 import React from 'react'
-import CategoryLIst from '../listOf/CategoryLIst'
+import CategoryLIst from '../categorylist/CategoryLIst'
 import Cart from '../UI/Cart/Cart'
 import CartSale from '../UI/Cart/CartSale'
 
