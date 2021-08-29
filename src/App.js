@@ -5,6 +5,7 @@ import CategoryMenu from "./components/categoryMenu/CategoryMenu.jsx";
 import Container from "./components/Container.jsx";
 import Header from "./components/header/Header";
 import Menu from "./components/menu/Menu";
+import Headline from "./components/sectionHeadline/Headline.jsx";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <CategoryMenu/>
         <BestSiling/>
         <BestFromFrames/>
+        <Headline/>
       </Container>
     </div>
   );
