@@ -1,0 +1,138 @@
+@import '../../scss/vars.scss';
+
+.header {
+    background-color: #FFFFFF;
+    color: $c1A;
+    padding: 16px 45px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba($c1D, .5);
+        padding-bottom: 16px;
+
+        &-contacts {
+            font-size: 12px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            line-height: 16px;
+
+        }
+
+        &-chat {
+            color: $c2A;
+            margin-right: 33px;
+        }
+
+        &-call {
+            color: $c1A;
+            margin-right: 33px;
+        }
+
+        &-email {
+            color: $c1A;
+        }
+
+        &-nav {
+            display: flex;
+            align-items: center;
+
+            &>a {
+                color: $c2A;
+                margin-right: 38px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &__search {
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-logo {
+            max-width: 180px;
+        }
+
+        &-btns {
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+            border: 1px solid $c1D;
+            border-radius: 12px;
+
+
+        }
+
+        &-loop {
+            width: 16px;
+            height: 16px;
+
+        }
+
+        &-select {
+            margin: 0;
+            padding-left: 16px;
+            padding-right: 24px;
+            display: block;
+            position: relative;
+            text-align: center;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 16px;
+                height: 16px;
+                background: url('../../img/search-arrow.svg') center right / contain no-repeat;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &-item {
+            color: $c1A;
+            font-weight: 700;
+            font-family: $popins;
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+        &-input {
+            border: none;
+            padding-left: 24px;
+            color: $c1C;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            width: 262px;
+            margin-right: 12px;
+
+        }
+
+        &-items {
+            display: flex;
+            align-items: center;
+        }
+
+        &-man {
+            margin-right: 40px;
+            width: 24px;
+            height: 24px;
+        }
+
+        &-shop {
+            width: 24px;
+            height: 24px;
+        }
+
+    }
+
+}

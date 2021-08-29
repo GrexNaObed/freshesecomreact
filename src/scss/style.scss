@@ -7,6 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 500;
+    background-color: #E5E5E5;
 }
 
 h1,
@@ -24,9 +25,24 @@ input {
     box-sizing: border-box;
 }
 
-a{
-    text-transform: none;
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
 }
- ul,li{
-     list-style: none;
- }
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1260px;
+    padding: 0 330px;
+    margin: 0 auto;
+}
