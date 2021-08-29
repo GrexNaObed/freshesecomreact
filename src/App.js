@@ -1,4 +1,5 @@
 import React from "react";
+import BestFromFrames from "./components/bestfromframes/BestFromFrames.jsx";
 import BestSiling from "./components/bestSilings/BestSiling.jsx";
 import CategoryMenu from "./components/categoryMenu/CategoryMenu.jsx";
 import Container from "./components/Container.jsx";
@@ -14,6 +15,7 @@ function App() {
         <Menu />
         <CategoryMenu/>
         <BestSiling/>
+        <BestFromFrames/>
       </Container>
     </div>
   );

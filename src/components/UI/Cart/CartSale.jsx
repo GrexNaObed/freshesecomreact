@@ -14,6 +14,7 @@ function CartSale({body}) {
             <div className="bestsiling__cart-bottom">
                 <div className="bestsiling__cart-priceBottom">
                     <h2 className="bestsiling__cart-price">1.48 USD</h2>
+                    <s className="bestsiling__cart-oldprice">48.56</s>
                 </div>
                 <button className='bestsiling__cart-btn'>Buy now</button>
             </div>
