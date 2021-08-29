@@ -1,4 +1,5 @@
 import React from "react";
+import BestSiling from "./components/bestSilings/BestSiling.jsx";
 import CategoryMenu from "./components/categoryMenu/CategoryMenu.jsx";
 import Container from "./components/Container.jsx";
 import Header from "./components/header/Header";
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Menu />
         <CategoryMenu/>
+        <BestSiling/>
       </Container>
     </div>
   );

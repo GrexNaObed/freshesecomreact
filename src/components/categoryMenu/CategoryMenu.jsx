@@ -1,29 +1,12 @@
 import React from 'react'
+import CategoryLIst from '../listOf/CategoryLIst'
 
 function CategoryMenu() {
     return (
         <div className='category'>
             <div className="category__items">
                 <div className="category__item">
-                    <h3 className="category__title">Category menu</h3>
-                    <ul className="category__item-links">
-                        <li className="category__item-link">
-                            <a href="" className="category__item-href">Bakery</a>
-                        </li>
-                        <li className="category__item-link">
-                            <a href="" className="category__item-href">Fruit and vegetables</a>
-                        </li>
-                        <li className="category__item-link">
-                            <a href="" className="category__item-href">Meat and fish</a>
-                        </li>
-                        <li className="category__item-link">
-                            <a href="" className="category__item-href">Drinks</a>
-                        </li>
-                        <li className="category__item-link">
-                            <a href="" className="category__item-href">Kitchen</a>
-                        </li>
-                    </ul>
-                    <button className='category__item-btn'>More categories</button>
+                   <CategoryLIst body={{title:'Category menu', btnText:'More categories'}} />
                 </div>
 
                 <div className="category__item">
