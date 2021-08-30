@@ -1,0 +1,52 @@
+.footer{
+    display: grid;
+    grid-template-rows: 205px 115px;
+    row-gap: 48px;
+    padding: 64px 45px;
+    background-color: $c1J;
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        &-item>h3{
+            font-family: $popins;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 16px;
+        }
+        &-links{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+
+        }
+        &-link{
+            color: $c2A;
+            margin-bottom: 16px;
+        }
+    }
+    &__productTag{
+        &-tag{
+            font-family: $popins;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 16px;
+        }
+        &-items{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &-item{
+            margin-right: 16px;
+            font-family: $popins;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 4px 10px;
+            background-color: $c1F;
+            border-radius: 12px;
+            margin-bottom: 16px;
+        }
+    }
+}

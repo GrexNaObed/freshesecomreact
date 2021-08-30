@@ -4,6 +4,7 @@ import BestSiling from "./components/bestSilings/BestSiling.jsx";
 import Blog from "./components/blog/Blog.jsx";
 import CategoryMenu from "./components/categoryMenu/CategoryMenu.jsx";
 import Container from "./components/Container.jsx";
+import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header";
 import Menu from "./components/menu/Menu";
 import OurCostumers from "./components/ourcostumers/OurCostumers.jsx";
@@ -22,6 +23,7 @@ function App() {
         <OurCostumers/>
         <Headline/>
         <Blog/>
+        <Footer/>
       </Container>
     </div>
   );
