@@ -25,11 +25,11 @@
             background: url('../../img/arrowRG.svg') center center / cover no-repeat;
         }
     }
-    &_row-info{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    // &_row-info{
+    //     // display: flex;
+    //     // align-items: center;
+    //     // justify-content: space-between;
+    // }
     &_row-cart{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
