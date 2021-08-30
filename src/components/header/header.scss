@@ -103,17 +103,34 @@
             font-family: $popins;
             font-size: 15px;
             line-height: 22px;
+            cursor: pointer;
         }
 
         &-input {
             border: none;
-            padding-left: 24px;
+            padding-left: 26px;
             color: $c1C;
             font-weight: 400;
             font-size: 14px;
             line-height: 19px;
             width: 262px;
             margin-right: 12px;
+            outline: none;
+            color: $c1A;
+            position: relative;
+            display: block;
+            appearance: none;
+            // &::before{
+            //     content: '';
+            //     position: absolute;
+            //     left: 0; 
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            //     width: 2px;
+            //     height: 20px;
+            //     display: block;
+            //     background-color: $c1D;
+            // }
 
         }
 
@@ -126,11 +143,13 @@
             margin-right: 40px;
             width: 24px;
             height: 24px;
+            cursor: pointer;
         }
 
         &-shop {
             width: 24px;
             height: 24px;
+            cursor: pointer;
         }
 
     }

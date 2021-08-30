@@ -1,0 +1,10 @@
+export { default as Header} from "../components/header/Header";
+export { default as Menu} from "../components/menu/Menu";
+export { default as CategoryMenu} from "../components/categoryMenu/CategoryMenu.jsx";
+export { default as BestSiling} from "../components/bestSilings/BestSiling.jsx";
+export { default as BestFromFrames} from "../components/bestfromframes/BestFromFrames.jsx";
+export { default as OurCostumers} from "../components/ourcostumers/OurCostumers.jsx";
+export { default as Headline} from "../components/sectionHeadline/Headline.jsx";
+export { default as Blog} from "../components/blog/Blog.jsx";
+export { default as Footer} from "../components/footer/Footer.jsx";
+export { default as Container} from "../components/Container.jsx";

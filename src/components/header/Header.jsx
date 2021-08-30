@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 function Header() {
+
     return (
         <div className='header'>
             <div className="header__top">
@@ -41,6 +43,7 @@ function Header() {
                     <li className="header__search-shop">
                         <img src="/img/shop.svg" alt="" />
                     </li>
+                  
                 </ul>
             </div>
         </div>
