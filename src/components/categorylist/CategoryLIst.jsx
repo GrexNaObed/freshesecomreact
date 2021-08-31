@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { AppContext } from '../../constructor/Constructor'
-import { fullMenuFunc } from '../../functions/functions'
 
 function CategoryLIst({ body, btnText }) {
 
@@ -90,7 +88,7 @@ function CategoryLIst({ body, btnText }) {
     return (
         <div>
             <h3 className="category__title">{ body.title }</h3>
-            { fullMenu }
+            {fullMenu}
         </div>
     )
 }
