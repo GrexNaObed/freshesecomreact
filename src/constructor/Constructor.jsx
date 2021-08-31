@@ -1,18 +1,19 @@
 import React from 'react'
-import { Header, Menu, CategoryMenu, BestSiling, BestFromFrames, OurCostumers, Headline, Blog, Footer, Container } from "../imports/importComponets"
+import { Route, Link } from "react-router-dom"
+import CategoryLIst from '../components/categorylist/CategoryLIst'
+import HomePage from '../pages/HomePage'
+
+export const AppContext = React.createContext({})
+
 function Constructor() {
+    
     return (
-        <Container>
-            <Header />
-            <Menu />
-            <CategoryMenu />
-            <BestSiling />
-            <BestFromFrames />
-            <OurCostumers />
-            <Headline />
-            <Blog />
-            <Footer />
-        </Container>
+        <AppContext.Provider >
+            <Route exact path='/'>
+                <HomePage />
+            </Route>
+        </AppContext.Provider>
+
     )
 }
 
