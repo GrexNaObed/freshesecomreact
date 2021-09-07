@@ -9,6 +9,7 @@ function BestSiling() {
             <div className="bestsiling__items">
                 <div className="bestsiling__item">
                     <CategoryLIst body={ { title: 'Best selling products', btnText: 'More products' } } />
+                    <button  className='category__item-btn'>More products</button>
                 </div>
                 <Cart />
                 <CartSale body={{sale:'-36%'}}/>

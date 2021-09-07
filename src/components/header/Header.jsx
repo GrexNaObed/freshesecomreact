@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
     const [toggleMenu, setToggleMenu] = useState(false)
@@ -6,21 +7,21 @@ function Header() {
         <div className='header'>
             <div className="header__top">
                 <div className="header__top-contacts">
-                    <a href="" className="header__top-chat">Chat with us</a>
-                    <a href="tel:+420336775664" className="header__top-call">+420 336 775 664</a>
-                    <a href="email:info@freshnesecom.com" className="header__top-email">info@freshnesecom.com</a>
+                    <Link to="/chat" className="header__top-chat">Chat with us</Link>
+                    <a href={"tel:+420336775664"} className="header__top-call">+420 336 775 664</a>
+                    <a href={"email:info@freshnesecom.com"} className="header__top-email">info@freshnesecom.com</a>
                 </div>
                 <div className="header__top-nav">
-                    <a href="" className="header-top-">Blog</a>
-                    <a href="" className="header-top-">About Us</a>
-                    <a href="" className="header-top-">Careers</a>
+                    <Link to="/blog" className="header-top-">Blog</Link>
+                    <Link to="/aboutus" className="header-top-">About Us</Link>
+                    <Link to="/careesrs" className="header-top-">Careers</Link>
                 </div>
             </div>
             <div className="header__search">
                 <div className="header__search-logo">
-                    <a href="" className="header__search-linkimg">
-                        <img className="header__search-img" src='/img/logo.svg'></img>
-                    </a>
+                    <Link to="/" className="header__search-linkimg">
+                        <img className="header__search-img" src='/img/logo.svg' alt="logo"></img>
+                    </Link>
                 </div>
                 <div className="header__search-btns">
                     <ul className="header__search-select">

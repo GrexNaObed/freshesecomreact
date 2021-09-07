@@ -1,14 +1,19 @@
-import React,{useState} from 'react'
+import React, { useContext } from 'react'
+import { useTransferContext } from '../../constructor/Constructor'
 import CategoryLIst from '../categorylist/CategoryLIst'
 
+
 function CategoryMenu() {
-    const [isfullMenu, setIsfullMenu] = React.useState(false)
+    const { setListMenu, listMenu, setItemToShow, ItemToShow } = useTransferContext()
+    function showMore(){
+        ItemToShow === 5 ? setItemToShow(listMenu.length) : setItemToShow(5)
+    }
     return (
         <div className='category'>
             <div className="category__items">
                 <div className="category__item">
-                        <CategoryLIst body={ { title: 'Category menu', btnText: 'More categories' } } />
-                        <button  className='category__item-btn'>More categories</button>
+                    <CategoryLIst body={ { title: 'Category menu', btnText: 'More categories' } } />
+                    <button onClick={ () => showMore()} className='category__item-btn'>More categories</button>
                 </div>
 
                 <div className="category__item">
