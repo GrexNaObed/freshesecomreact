@@ -55,7 +55,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+     
         &-logo {
             max-width: 180px;
         }
@@ -104,8 +104,28 @@
             font-size: 15px;
             line-height: 22px;
             cursor: pointer;
+            position: relative;
+            user-select: none;
+            &.item-wrapper{
+                margin-bottom: 15px;
+                text-align: left;
+            }
         }
 
+        .active{
+            display: block;
+        }
+        &-wrapper{
+            position: absolute;
+            width: 100%;
+            left: -20px;
+            top: 35px;
+            background-color: #fff;
+            z-index: 4;
+            padding: 10px 32px;
+            border-radius: 15px;
+            display: none;
+        }
         &-input {
             border: none;
             padding-left: 26px;

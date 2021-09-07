@@ -1,94 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function CategoryLIst({ body, btnText }) {
-
-    const [fullMenu, setfullMenu] = React.useState(
-        <div>
-            <ul className="category__item-links">
-                <li className="category__item-link">
-                    <Link to='/bakery' className="category__item-href">Bakery</Link>
-                </li>
-                <li className="category__item-link">
-                    <Link to='/fruitandvegetables' className="category__item-href">Fruit and vegetables</Link>
-                </li>
-                <li className="category__item-link">
-                    <Link to='/meatandfish' className="category__item-href">Meat and fish</Link>
-                </li>
-                <li className="category__item-link">
-                    <Link to='/drinks' className="category__item-href">Drinks</Link>
-                </li>
-                <li className="category__item-link">
-                    <Link to='/kitchen' className="category__item-href">Kitchen</Link>
-                </li>
-            </ul>
-            <button onClick={ fullMenuFunc } className='category__item-btn'>{ body.btnText }</button>
-        </div>
-    )
-
-    function fullMenuFunc() {
-        setfullMenu(
-            <div>
-                <ul className="category__item-links">
-                    <li className="category__item-link">
-                        <Link to='/bakery' className="category__item-href">Bakery</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/fruitandvegetables' className="category__item-href">Fruit and vegetables</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/meatandfish' className="category__item-href">Meat and fish</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/drinks' className="category__item-href">Drinks</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/kitchen' className="category__item-href">Kitchen</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/specialnutrition' className="category__item-href">Special nutrition</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/baby' className="category__item-href">Baby</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/pharmacy' className="category__item-href">Pharmacy</Link>
-                    </li>
-                </ul>
-                <button onClick={ notFullMenu } className='category__item-btn'>{ body.btnText }</button>
-            </div>)
-    }
-
-    function notFullMenu() {
-        setfullMenu(
-            <div>
-                <ul className="category__item-links">
-                    <li className="category__item-link">
-                        <Link to='/bakery' className="category__item-href">Bakery</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/fruitandvegetables' className="category__item-href">Fruit and vegetables</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/meatandfish' className="category__item-href">Meat and fish</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/drinks' className="category__item-href">Drinks</Link>
-                    </li>
-                    <li className="category__item-link">
-                        <Link to='/kitchen' className="category__item-href">Kitchen</Link>
-                    </li>
-                </ul>
-                <button onClick={ fullMenuFunc } className='category__item-btn'>{ body.btnText }</button>
-            </div>
-        )
-    }
+    const [listMenu, setListMenu] = useState([
+        { id: 1, title: 'Bakery', link: 'bakery' },
+        { id: 2, title: 'Fruit and vegetables', link: 'fruitandvegetables' },
+        { id: 3, title: 'Meat and fish', link: 'meatandfish' },
+        { id: 4, title: 'Drinks', link: 'drinks' },
+        { id: 5, title: 'Kitchen', link: 'kitchen' },
+    ])
 
 
     return (
         <div>
             <h3 className="category__title">{ body.title }</h3>
-            {fullMenu}
+            <ul className='category__item-links'>
+                {
+                    listMenu.map(item =>
+                        <li key={ item.id } className='category__item-link' onClick={ () => setListMenu() }>
+                            <Link to={ `/${item.link}` } className="category__item-href"> { item.title } </Link>
+                        </li>
+
+                    )
+                }
+
+            </ul>
+
         </div>
     )
 }
